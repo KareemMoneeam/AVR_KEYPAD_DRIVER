@@ -1,5 +1,6 @@
 # KEYPAD_DRIVER
 Generic Keypad Driver - Ready to use for any microcontroller 
+Used GPIO -> AVR Atmega32/Atmega16 
 
 ## Driver description
 Our driver has only one main function for standard keypad:
