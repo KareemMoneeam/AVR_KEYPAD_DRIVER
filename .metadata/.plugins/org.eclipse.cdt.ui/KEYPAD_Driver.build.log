@@ -1,0 +1,46 @@
+16:56:52 **** Build of configuration Debug for project KEYPAD_Driver ****
+make all 
+Building file: ../KEYPAD_Test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"KEYPAD_Test.d" -MT"KEYPAD_Test.o" -c -o "KEYPAD_Test.o" "../KEYPAD_Test.c"
+Finished building: ../KEYPAD_Test.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+In file included from ../keypad.c:14:
+e:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad.c
+ 
+Building target: KEYPAD_Driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_Driver.map -mmcu=atmega32 -o "KEYPAD_Driver.elf"  ./KEYPAD_Test.o ./gpio.o ./keypad.o   
+Finished building target: KEYPAD_Driver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_Driver.elf  >"KEYPAD_Driver.lss"
+Finished building: KEYPAD_Driver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_Driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:56:57 Build Finished. 0 errors, 1 warnings. (took 4s.243ms)
+
