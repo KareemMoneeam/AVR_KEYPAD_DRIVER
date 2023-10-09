@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;KEYPAD_Driver/Exercise1.c&apos; to &apos;KEYPAD_Test.c&apos;" description="Rename resource &apos;Exercise1.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Exercise1.c" name="KEYPAD_Test.c" stamp="1696823596241" updateReferences="true"/>
-</session>

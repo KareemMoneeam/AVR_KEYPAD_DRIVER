@@ -142,7 +142,7 @@ LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1582
+.text           0x00000000     0x1494
  *(.vectors)
  .vectors       0x00000000       0x54 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -269,21 +269,21 @@ LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00001170       0x8a ./gpio.o
                 0x00001170                GPIO_readPort
  .text.KEYPAD_getPressedKey
-                0x000011fa      0x1c8 ./keypad.o
+                0x000011fa      0x1c0 ./keypad.o
                 0x000011fa                KEYPAD_getPressedKey
- .text.KEYPAD_4x4_adjustKeyNumber
-                0x000013c2      0x14e ./keypad.o
- .text.libgcc   0x00001510        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001510       0x38 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00001510                __prologue_saves__
- .text.libgcc   0x00001548       0x36 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00001548                __epilogue_restores__
- .text.libgcc   0x0000157e        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
-                0x0000157e                . = ALIGN (0x2)
+ .text.KEYPAD_4x3_adjustKeyNumber
+                0x000013ba       0x68 ./keypad.o
+ .text.libgcc   0x00001422        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001422       0x38 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00001422                __prologue_saves__
+ .text.libgcc   0x0000145a       0x36 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x0000145a                __epilogue_restores__
+ .text.libgcc   0x00001490        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00001490                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000157e        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x0000157e                exit
-                0x0000157e                _exit
+ .fini9         0x00001490        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001490                exit
+                0x00001490                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -302,11 +302,11 @@ LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000157e        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001490        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001582                _etext = .
+                0x00001494                _etext = .
 
-.data           0x00800060        0x8 load address 0x00001582
+.data           0x00800060        0x8 load address 0x00001494
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -362,8 +362,8 @@ LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.bss*)
  *(COMMON)
                 0x00800068                PROVIDE (__bss_end, .)
-                0x00001582                __data_load_start = LOADADDR (.data)
-                0x0000158a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001494                __data_load_start = LOADADDR (.data)
+                0x0000149c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800068        0x0
                 0x00800068                PROVIDE (__noinit_start, .)
@@ -388,13 +388,13 @@ LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000      0xe4c
+.stab           0x00000000      0xda4
  *(.stab)
  .stab          0x00000000      0x270 ./KEYPAD_Test.o
  .stab          0x00000270      0x798 ./gpio.o
                                 0x870 (size before relaxing)
- .stab          0x00000a08      0x444 ./keypad.o
-                                0x6a8 (size before relaxing)
+ .stab          0x00000a08      0x39c ./keypad.o
+                                0x600 (size before relaxing)
 
 .stabstr        0x00000000      0xa41
  *(.stabstr)

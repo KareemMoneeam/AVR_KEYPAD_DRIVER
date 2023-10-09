@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Exercise1.c
+ Name        : KEYPAD_Test.c
  Author      : Kareem Abd El-Moneam
  Description : Test the keypad driver with 7-segment
  Date        : 9/10/2023
