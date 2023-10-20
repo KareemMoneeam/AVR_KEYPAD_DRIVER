@@ -1,29 +1,37 @@
-# KEYPAD_DRIVER
-Generic Keypad Driver - Ready to use for any microcontroller 
+<!-- KEYPAD Driver -->
 
-Used GPIO -> AVR Atmega32/Atmega16 
+<h1 align="center">KEYPAD Driver</h1>
 
-## Driver description
-Our driver has only one main function for standard keypad:
+<p align="center">
+  An efficient keypad driver designed for microcontroller-based applications, offering support for various keypad configurations.
+</p>
 
-- KEYPAD_getPressedKey()
+---
 
-Description :
+**Key Features**
 
-- Gets the Keypad pressed button by scanning technique.
+- **Universal Compatibility:** Works seamlessly with microcontrollers.
+- **Flexible Configuration:** Compatible with 3x3 and 4x4 keypad configurations.
+- **Intuitive API:** Provides simple functions for keypad interfacing.
+- **Button Mapping:** Automatic button mapping for both standard and custom keypad configurations.
 
-The Driver supports 4x4 and 4x3 keypads, it also has two additional functions for the purpose of simulation on protues simulator:
+**Usage**
 
-1- KEYPAD_4x3_adjustKeyNumber()
+The KEYPAD driver simplifies keypad interfacing with your microcontroller. It's compatible with various keypad configurations, making it a versatile choice for your projects.
 
-Description:
+**Getting Started**
 
-- Function responsible for mapping the switch number in the keypad to
-- its corresponding functional number in the proteus for 4x3 keypad
- 
-2- KEYPAD_4x4_adjustKeyNumber()
+To use this KEYPAD driver, clone this repository and explore the example code. Whether you have a 4x3 or 4x4 keypad, this driver simplifies your keypad interfacing.
 
-Description: 
+**Contributions**
 
-- Function responsible for mapping the switch number in the keypad to
-- its corresponding functional number in the proteus for 4x4 keypad
+This open-source KEYPAD driver welcomes contributions and enhancements. Feel free to submit pull requests for suggestions, bug fixes, or new features to support the community.
+
+<div align="center">
+  <p>Connect with me on <a href="https://www.linkedin.com/in/kareemmoneeam/">LinkedIn</a></p>
+  <p>Email: <a href="mailto:kareemmoneeam@outlook.com">kareemmoneeam@outlook.com</a></p>
+</div>
+
+---
+
+</div>
