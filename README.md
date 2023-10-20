@@ -11,7 +11,7 @@
 **Key Features**
 
 - **Universal Compatibility:** Works seamlessly with microcontrollers.
-- **Flexible Configuration:** Compatible with 3x3 and 4x4 keypad configurations.
+- **Flexible Configuration:** Compatible with 4x3 and 4x4 keypad configurations.
 - **Intuitive API:** Provides simple functions for keypad interfacing.
 - **Button Mapping:** Automatic button mapping for both standard and custom keypad configurations.
 
